@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="be5e-7ee5-96ce-f025" name="Regiment" revision="1" battleScribeVersion="2.03" authorName="Anton Chepelev" authorContact="chepelash@gmail.com" library="false" gameSystemId="ba10-6a83-f7ab-b713" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType id="ae83-b8ef-543b-2f5a" name="Mutation Table">
+      <characteristicTypes>
+        <characteristicType id="938f-641e-c638-3b21" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <entryLinks>
+    <entryLink id="f990-b371-65a5-f89c" name="Toff" hidden="false" collective="false" import="true" targetId="8f53-57df-7dfa-91ce" type="selectionEntry"/>
+    <entryLink id="29a1-c86d-3885-e29f" name="Toady" hidden="false" collective="false" import="true" targetId="3a7f-01b2-53b1-ef70" type="selectionEntry"/>
+    <entryLink id="8317-47bc-4957-5645" name="Bastards" hidden="false" collective="false" import="true" targetId="479a-ddfc-7d71-064d" type="selectionEntry"/>
+    <entryLink id="2a5c-de6b-6449-cb69" name="Brutes" hidden="false" collective="false" import="true" targetId="d6a2-dee0-06aa-350a" type="selectionEntry"/>
+    <entryLink id="a60e-0cc0-e3d8-2106" name="Chaff" hidden="false" collective="false" import="true" targetId="0dec-4e0e-ae1c-af88" type="selectionEntry"/>
+    <entryLink id="0d49-0027-7bbf-00e9" name="Fodder" hidden="false" collective="false" import="true" targetId="9ef4-6190-d02d-6376" type="selectionEntry"/>
+    <entryLink id="aa3b-28bb-f6bd-9231" name="Stump Gun" hidden="false" collective="false" import="true" targetId="5226-197b-2a3f-3ed2" type="selectionEntry"/>
+    <entryLink id="910e-48cf-e558-49c0" name="Whelps" hidden="false" collective="false" import="true" targetId="98c4-dd57-171c-52fd" type="selectionEntry"/>
+    <entryLink id="f69e-c7e7-2022-8fae" name="Cult" hidden="false" collective="false" import="true" targetId="4599-7e09-c2b6-7a35" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ef67-d432-2c98-b876" name="New CategoryLink" hidden="false" targetId="211e-c2ff-ded6-83d1" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0258-b282-529d-b5f3" name="Grogs" hidden="false" collective="false" import="true" targetId="ade5-b1f8-f38a-e0a1" type="selectionEntry"/>
+    <entryLink id="fd06-14b4-d00f-68f9" name="Tod" hidden="false" collective="false" import="true" targetId="b9f7-53f4-382b-2616" type="selectionEntry"/>
+    <entryLink id="29df-a64d-9cbb-e70e" name="The Swelling" hidden="false" collective="false" import="true" targetId="84a3-cd9b-d628-45f5" type="selectionEntry"/>
+    <entryLink id="2d55-a257-4342-e322" name="Rootlings" hidden="false" collective="false" import="true" targetId="8a1b-0d2f-6b9a-ffc5" type="selectionEntry"/>
+    <entryLink id="7793-ccff-31eb-bcee" name="Lopers" hidden="false" collective="false" import="true" targetId="d971-a733-9f73-b85a" type="selectionEntry"/>
+    <entryLink id="a030-32b2-f2f6-8dca" name="Rootshrine" hidden="false" collective="false" import="true" targetId="9d71-dcb9-c013-f344" type="selectionEntry"/>
+    <entryLink id="d6c0-a697-7d9b-7512" name="Houndmaster" hidden="false" collective="false" import="true" targetId="e06d-9145-da1f-4305" type="selectionEntry"/>
+    <entryLink id="ef24-9d96-3599-eb4c" name="The Tall Man" hidden="false" collective="false" import="true" targetId="9a8a-7793-a8f2-5ea2" type="selectionEntry"/>
+    <entryLink id="11bb-7432-a7f9-7a0a" name="Snail Knight" hidden="false" collective="false" import="true" targetId="c67d-afbb-d0f8-3f50" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="d27f-2492-4e20-9762" name="Toff Off!" hidden="false">
+      <description>When a Toff is chosen to activate, and there is an enemy Toff within 18&quot; and in line of sight, they may propose a Toff Off!
+When a Toff is challenged to a Toff Off! they may choose how the duel is fought: Pistols or sabres.
+• Pistols: Both Toffs will make simultaneous shooting attacks against each other until one of them has perished. These attacks do not generate powder smoke.
+• Sabres: Both Toffs will make simultaneous melee attacks against each other until one of them has perished.
+	If a Toff cannot make shooting attacks, either because of mutations or equipment, they must endure a single free shooting attack from their opponent before both parties proceed to duel using sabres.
+	If a player is feeling particularly honourable, when challenged, they may give their opponent the choice between Pistols or Sabres.
+
+To add a bit of visual flair players are encouraged to pick a suitable spot on the battlefield to host their Toff Off! Mark the Toff&apos;s original positions with tokens and place the Toffs together 6&quot; apart if using pistols, or in base-to-base if using sabres.
+
+Once one Toff has fallen, return the victor to their original position and proceed with their orders.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="8f53-57df-7dfa-91ce" name="Toff" publicationId="16ce-3f61-8dcc-0da5" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="617f-2efb-cb45-305c" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="8159-2c13-813c-70a0" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="617f-2efb-cb45-305c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8159-2c13-813c-70a0" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="6ea1-a70b-f4b9-e0ef" name="Toff" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">2</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">2</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d042-1ff2-30a3-e0fa" name="Command Range 6&quot;" hidden="false" targetId="4f2f-d341-2582-c16e" type="profile"/>
+        <infoLink id="6629-f26f-8a1a-385a" name="Weapons range 6&quot;" hidden="false" targetId="a5fe-4608-a848-dfaa" type="profile"/>
+        <infoLink id="2d6f-b014-1fb5-b75a" name="Toss" hidden="false" targetId="c5be-f741-e711-683e" type="profile"/>
+        <infoLink id="b675-7785-7ba0-de88" name="Call of the Swollen One" hidden="false" targetId="1992-e721-cca4-dcaf" type="profile"/>
+        <infoLink id="5c09-9f7b-fb7c-2a92" name="Exposed" hidden="false" targetId="9549-2a93-aee6-2cb3" type="profile"/>
+        <infoLink id="a42a-664e-9fd4-e512" name="Stride" hidden="false" targetId="70ed-9180-160f-7f29" type="profile"/>
+        <infoLink id="c68b-b5f9-ae7b-540f" name="Grub&apos;s Offering" hidden="false" targetId="3f97-a628-7e88-4cf9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4bb1-54e9-cd03-f129" name="Snobs" hidden="false" targetId="4947-3f8a-fd9c-4855" primary="true"/>
+        <categoryLink id="418e-2ffd-f4ab-0148" name="Toff" hidden="false" targetId="ddce-b1ea-f149-e6c1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bc04-6970-5753-15e9" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9ef4-6190-d02d-6376" name="Fodder" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ce89-5be7-f06e-1040" name="Fodder" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">1</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">6+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">6+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bcba-bb27-7bec-9e63" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="b272-8019-28fe-ff40" name="Safety in Numbers" hidden="false" targetId="fcfa-414c-4a82-5228" type="profile"/>
+        <infoLink id="003d-ac86-a1a7-8f03" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6a9b-24b7-8439-eb77" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="45d7-fbbd-b76a-93f0" name="Stilt Spotter" hidden="false" collective="false" import="true" targetId="8cdd-c3f9-dfec-9904" type="selectionEntryGroup"/>
+        <entryLink id="3b25-c75b-c55f-771b" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="3a7f-01b2-53b1-ef70" name="Toady" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9aa9-ddea-b205-90fa" name="Toady" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">1</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">2</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e766-b127-62db-09e7" name="Command Range 3&quot;" hidden="false" targetId="d993-79da-0899-b6aa" type="profile"/>
+        <infoLink id="d7ef-e6f5-9b01-43dc" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="7f0f-3cc8-3d1b-4142" name="Minders" hidden="false" targetId="af35-2030-da44-7b01" type="profile"/>
+        <infoLink id="01ff-9254-d08e-f6d0" name="Stride" hidden="false" targetId="70ed-9180-160f-7f29" type="profile"/>
+        <infoLink id="7971-c72d-352a-124b" name="Exposed" hidden="false" targetId="9549-2a93-aee6-2cb3" type="profile"/>
+        <infoLink id="f71a-5083-af30-c524" name="Grub&apos;s Offering" hidden="false" targetId="3f97-a628-7e88-4cf9" type="profile"/>
+        <infoLink id="f6a6-cc08-bf72-d79a" name="Clergy" hidden="false" targetId="92a7-1bdf-6b10-98c7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fe08-e9f5-86cf-e867" name="Snobs" hidden="false" targetId="4947-3f8a-fd9c-4855" primary="true"/>
+        <categoryLink id="7fb5-11e1-da19-0110" name="Toady" hidden="false" targetId="b607-0ec6-a5bb-784b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8758-08ae-e1ab-0e40" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="0dec-4e0e-ae1c-af88" name="Chaff" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8442-c621-199f-3dfc" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="be94-4505-decd-5370" name="Chaff" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">1</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">6+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9194-002b-a290-15a1" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="f19f-f85d-f590-d423" name="Sharpshooters" hidden="false" targetId="c78e-88c7-01c2-7498" type="profile"/>
+        <infoLink id="41a1-6d58-0a25-4663" name="Vanguard" hidden="false" targetId="e3dd-5b5f-eb28-bc40" type="profile"/>
+        <infoLink id="2516-9fc0-5f38-93cc" name="Skirmish" hidden="false" targetId="05ab-1e92-17c9-9e1c" type="profile"/>
+        <infoLink id="20a4-61c3-0e72-712c" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="07c4-49cf-7327-4a0f" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+        <categoryLink id="7230-b419-2f8d-a599" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="97c9-c14e-4f4a-638e" name="Stilt Spotter" hidden="false" collective="false" import="true" targetId="8cdd-c3f9-dfec-9904" type="selectionEntryGroup"/>
+        <entryLink id="7868-4d9d-5837-dde5" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="d6a2-dee0-06aa-350a" name="Brutes" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="328f-a0db-2a35-8e96" type="notEqualTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e30f-29e6-0f64-f67b" type="notEqualTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3db7-b0ab-a05e-077c" name="Brutes" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">2</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4a4b-2441-9140-2e01" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="8a84-e397-0d35-c608" name="Fearless" hidden="false" targetId="bbdf-fe2e-3425-8c5a" type="profile"/>
+        <infoLink id="c3eb-b58c-481a-0d6b" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ff11-86f9-39a2-b8a4" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b39d-2ada-4bf1-a04e" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="98c4-dd57-171c-52fd" name="Whelps" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2406-4ab0-b611-1248" name="Whelps" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">12&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">2</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">7+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aaa6-d8e4-55cf-5256" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="bd54-875e-1424-9fe5" name="Run them Down!" hidden="false" targetId="23e7-d50d-ee7b-db9c" type="profile"/>
+        <infoLink id="eb16-28b6-4b85-afe5" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b3ee-0796-bc8c-b44e" name="Cavalry Followers" hidden="false" targetId="49f4-7ad9-e46b-63c3" primary="false"/>
+        <categoryLink id="6092-a0d1-a9e2-e93d" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="48bc-24ca-346c-c863" name="Stilt Spotter" hidden="false" collective="false" import="true" targetId="8cdd-c3f9-dfec-9904" type="selectionEntryGroup"/>
+        <entryLink id="4072-9afa-42cd-976e" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="479a-ddfc-7d71-064d" name="Bastards" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2691-72ea-b409-a7a0" name="Bastards" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">12&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">3</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="588c-f67b-1c82-d90e" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile"/>
+        <infoLink id="ecd7-a35b-a33d-9b66" name="Bowel-loosening Charge" hidden="false" targetId="a568-ebb0-4b9e-37c1" type="profile"/>
+        <infoLink id="9109-dec2-7796-1e34" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c841-d33e-5f7d-340f" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+        <categoryLink id="860d-0976-c6d1-7032" name="Cavalry Followers" hidden="false" targetId="49f4-7ad9-e46b-63c3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2dee-7bbc-3e30-4897" name="Stilt Spotter" hidden="false" collective="false" import="true" targetId="8cdd-c3f9-dfec-9904" type="selectionEntryGroup"/>
+        <entryLink id="7b35-285f-c3b7-8235" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5226-197b-2a3f-3ed2" name="Stump Gun" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2927-8427-d523-3f43" name="Stump Gun" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">0&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">3</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">6+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">3</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4fe2-ed51-88c4-3be7" name="Ammunition" hidden="false" targetId="a6a1-9bcf-0e0c-5272" type="profile"/>
+        <infoLink id="4c47-b2ad-1669-56cd" name="Round Shot" hidden="false" targetId="8576-6870-1653-bc9c" type="profile"/>
+        <infoLink id="7eef-8f2d-8a0c-a24c" name="Grape Shot" hidden="false" targetId="71d7-585b-a969-7952" type="profile"/>
+        <infoLink id="c9b0-5f7c-7ae7-a62b" name="Unstable Icon" hidden="false" targetId="8e0e-3097-cc02-884a" type="profile"/>
+        <infoLink id="7289-01e8-f679-b50f" name="Stubborn fanatics" hidden="false" targetId="05a6-c449-0ec0-f0c7" type="profile"/>
+        <infoLink id="541d-593d-cde4-b4d0" name="Preliminary Bombardment" hidden="false" targetId="aeae-5b7c-c3a2-e63a" type="profile"/>
+        <infoLink id="ff8d-50cf-2687-5f5e" name="Zealot" hidden="false" targetId="9edf-0fb9-75ba-db06" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2fa1-e01d-5bae-a555" name="Artillery Followers" hidden="false" targetId="3a43-6aee-ddf6-b23d" primary="false"/>
+        <categoryLink id="10c7-fd12-9c3c-61e9" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2d57-f1e4-f0d7-e944" name="Stilt Spotter" hidden="false" collective="false" import="true" targetId="8cdd-c3f9-dfec-9904" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4599-7e09-c2b6-7a35" name="Cult" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b7-5365-1071-6857" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="863b-ff88-99b0-f055" name="Configuration" hidden="false" targetId="211e-c2ff-ded6-83d1" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a55f-6b41-1a65-cd77" name="Cult" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ba-2920-ab13-ec28" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e0d-c8ef-6851-5c78" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e30f-29e6-0f64-f67b" name="The Slug&apos;s Lament" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9366-294f-e893-e1c0" name="Call the Old Guard" hidden="false" targetId="23d5-82f3-0473-35c4" type="profile"/>
+                <infoLink id="1327-725a-de6e-6daf" name="Bristling" hidden="false" targetId="15d0-e8ac-a407-5095" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="ff8e-ddef-169e-204d" name="Tod&apos;s Folly" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="84ff-37fc-285c-1072" name="Misplaced Confidence" hidden="false" targetId="e63c-ef05-4a68-d5d9" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="8442-c621-199f-3dfc" name="Temple of Swellings" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="02da-9115-a653-0970" name="Root Priest" hidden="false" targetId="6bf1-3797-761a-c3d2" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="328f-a0db-2a35-8e96" name="Lopers of the Maudlin Marsh" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="12c2-83ca-75a2-7e27" name="Snobs&apos; Stilts" hidden="false" targetId="ba2e-7b46-137e-5734" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="596c-bbea-b81e-7cb0" name="Brotherhood of Greed" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="11cc-d976-a68a-5b79" name="Gluttony" hidden="false" targetId="e8ac-97b4-f46e-04d2" type="profile"/>
+                <infoLink id="9809-fe91-7e43-6981" name="Grub" hidden="false" targetId="314d-e8a9-71ba-6470" type="profile"/>
+                <infoLink id="c2f9-404c-c054-7387" name="New InfoGroup" hidden="false" targetId="1b0f-62a9-8e43-127a" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="dc55-002a-1af9-f434" name="Procession of Woe" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="1dce-d4ed-fe89-1261" name="Uprising of the Louse" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f357-5bef-8af0-81e1" name="Uprising of the Louse Regiment" hidden="false" targetId="4bfa-f7f8-2086-ceb2" type="rule"/>
+                <infoLink id="ddd0-7c9b-4c4a-8893" name="Rebellion" hidden="false" targetId="3548-68ee-fcad-cedb" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="927a-5317-312b-22f5" name="Knights of the Shellwood" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="8d21-dc60-f2e6-b0f3" name="Slow and Steady" hidden="false" targetId="53e8-0880-575e-0133" type="rule"/>
+                <infoLink id="26c0-aa83-5851-ec01" name="Snail keepers" hidden="false" targetId="0d6f-8d54-9a04-5a5f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="ade5-b1f8-f38a-e0a1" name="Grogs" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e30f-29e6-0f64-f67b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="014b-a1de-8be1-bc2e" name="Grogs" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">2</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">4+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f71b-7afc-0299-0c1f" name="Weapons range 18&quot;" hidden="false" targetId="b5e4-4065-5d29-13d6" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="self" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f94e-0732-9b16-a38c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="413e-141e-bc0f-42be" name="Fearless" hidden="false" targetId="bbdf-fe2e-3425-8c5a" type="profile"/>
+        <infoLink id="54d0-a242-31c3-719e" name="Disgustingly Stubborn" hidden="false" targetId="826c-6541-7b3a-abea" type="profile"/>
+        <infoLink id="856a-81c6-77e4-4f67" name="Grenadiers" hidden="false" targetId="19db-2d6f-b70a-ee16" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="28ad-c326-18c8-299b" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+        <categoryLink id="126d-1029-814b-0107" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="9ce7-953a-bc26-ad4f" name="Cult Followers" hidden="false" targetId="0f19-fa6b-2ca4-c73d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1b6f-2917-1aa8-d9e7" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="b9f7-53f4-382b-2616" name="Tod" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="6e33-7d58-99c2-2be9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d3-dad8-587f-8b54" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e33-7d58-99c2-2be9" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="e0ce-7a3c-5096-935d" name="Tod" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">3</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">7+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">7+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8a16-28bd-fa89-cd5d" name="Weapons range 6&quot;" hidden="false" targetId="a5fe-4608-a848-dfaa" type="profile"/>
+        <infoLink id="f1a8-d971-81aa-24e1" name="Warty Charisma" hidden="false" targetId="1733-515e-e8e6-9597" type="profile"/>
+        <infoLink id="b43a-45e7-9d9c-7b4d" name="Son of Tod" hidden="false" targetId="17b2-ffbf-790c-5172" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d54f-3f3d-6f9e-530a" name="Snobs" hidden="false" targetId="4947-3f8a-fd9c-4855" primary="true"/>
+        <categoryLink id="cce5-d296-83a7-a9d7" name="Toff" hidden="false" targetId="ddce-b1ea-f149-e6c1" primary="false"/>
+        <categoryLink id="68ab-54d8-49b1-bf6a" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="390a-977d-f4ed-b5c4" name="Equipment" hidden="false" collective="false" import="true" targetId="65c3-0790-7fbd-1b3a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8a1b-0d2f-6b9a-ffc5" name="Rootlings" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8442-c621-199f-3dfc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2105-bc0a-38db-c1b4" name="Rootlings" hidden="true" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">3</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">6+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">6+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="eb66-5c46-1af6-0829" name="Skirmish" hidden="false" targetId="05ab-1e92-17c9-9e1c" type="profile"/>
+        <infoLink id="e736-dd39-e68a-1c80" name="Vanguard" hidden="false" targetId="e3dd-5b5f-eb28-bc40" type="profile"/>
+        <infoLink id="2fb5-3a73-de21-89aa" name="Pathetic" hidden="false" targetId="8dc7-afa6-c134-5da3" type="profile"/>
+        <infoLink id="92cf-debd-9eed-6d9b" name="Marsh Born" hidden="false" targetId="20cc-bf9f-c835-653b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2441-2bac-9d10-c2ef" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="139c-4798-84aa-1430" name="Cult Followers" hidden="false" targetId="0f19-fa6b-2ca4-c73d" primary="false"/>
+        <categoryLink id="43d5-6441-ca95-5673" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="84a3-cd9b-d628-45f5" name="The Swelling" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8442-c621-199f-3dfc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0b5e-082b-4a52-a437" name="The Swelling" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+          <characteristics>
+            <characteristic name="Description" typeId="7556-d5b4-92df-ce01">The swelling is a maleficent growth that devours flesh and anything it can get its tendrils on.
+The Swelling is represented by a bulbous growth on a circular base with a diameter of 4&quot;. Its tendrils are represented by roots on bases 1&quot; wide and 4&quot; long.
+The Swelling starts without any tendrils and may only ever have a maximum of 8 tendrils at any time.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d366-5d25-ab1d-0416" name="Tendrils" hidden="false" targetId="df5e-a93b-7bb7-ecf6" type="profile"/>
+        <infoLink id="199d-ac71-77e8-b558" name="Flesh hunger" hidden="false" targetId="ccae-5feb-beb7-4ac3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ed60-f6dd-0793-e3cc" name="New CategoryLink" hidden="false" targetId="ad1d-cdce-31d0-c06b" primary="true"/>
+        <categoryLink id="224f-6b46-992c-c28b" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="11e5-2a91-a908-70f0" name="Cult Followers" hidden="false" targetId="0f19-fa6b-2ca4-c73d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="d971-a733-9f73-b85a" name="Lopers" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="328f-a0db-2a35-8e96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="104b-2df1-a35a-4427" name="Lopers" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">12&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">2</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">1</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="01e8-6872-ea4b-2919" name="Stilts" hidden="false" targetId="cd0b-3f9b-b68e-1480" type="profile"/>
+        <infoLink id="66b4-9c21-60a0-dd85" name="Unfortunate Wobble" hidden="false" targetId="271a-d4cb-8b0b-a56f" type="profile"/>
+        <infoLink id="5150-0b88-5087-bebe" name="Stride" hidden="false" targetId="70ed-9180-160f-7f29" type="profile"/>
+        <infoLink id="31ac-6764-edc6-4290" name="Exposed" hidden="false" targetId="9549-2a93-aee6-2cb3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f0d2-ba44-cc07-a24c" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="3ef2-42d1-ee6e-8e3e" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+        <categoryLink id="933d-4eba-a5f9-3bd6" name="Cult Followers" hidden="false" targetId="0f19-fa6b-2ca4-c73d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="9d71-dcb9-c013-f344" name="Rootshrine" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="042b-20a5-1baf-cea9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccce-a09d-c2d0-7d2b" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="042b-20a5-1baf-cea9" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="20d1-e520-ea79-bbf0" name="Rootshrine" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">3</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">6+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">4</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">4+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4e7d-34df-056f-ff4f" name="Ululating Shrine" hidden="false" targetId="89aa-05f2-8e67-ea6e" type="profile"/>
+        <infoLink id="50e1-15de-ff5e-5f95" name="Confession" hidden="false" targetId="362d-6750-dcc9-063e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8dca-b1e0-f23f-295b" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="be77-c1f8-50a9-fb6d" name="New CategoryLink" hidden="false" targetId="4947-3f8a-fd9c-4855" primary="true"/>
+        <categoryLink id="93df-7114-4b96-2797" name="Toff" hidden="false" targetId="ddce-b1ea-f149-e6c1" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="e06d-9145-da1f-4305" name="Houndmaster" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df52-fb11-de03-f811" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e43d-f7f5-92ca-8fc9" name="Houndmaster" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">6&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">4</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">2</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">5+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5966-93c5-e326-f8cd" name="Sniff them Out" hidden="false" targetId="7849-a900-69d2-d64e" type="profile"/>
+        <infoLink id="d65b-2063-86d5-2da9" name="The Houndmaster" hidden="false" targetId="bead-3ce0-5ca9-a362" type="profile"/>
+        <infoLink id="5e89-0836-e40e-690b" name="Command Range 6&quot;" hidden="false" targetId="4f2f-d341-2582-c16e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5927-9fad-1ed3-c06a" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="8bcc-09de-9f97-97d0" name="Snobs" hidden="false" targetId="4947-3f8a-fd9c-4855" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="9a8a-7793-a8f2-5ea2" name="The Tall Man" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dce-d4ed-fe89-1261" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3e-b8b5-da3d-0824" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b1d5-b6a6-b076-ebc1" name="The Tall Man" hidden="false" targetId="c1aa-7fcc-739d-e971" type="profile"/>
+        <infoLink id="9aa8-1b83-06b8-4e14" name="The Tall Man Protects" hidden="false" targetId="ac76-15ea-b781-7aed" type="profile"/>
+        <infoLink id="449d-18f1-8361-7711" name="The Tall Man Reveals" hidden="false" targetId="b0ce-95b8-b93e-fc17" type="profile"/>
+        <infoLink id="2f05-b1dd-5766-8045" name="The Tall Man Stands" hidden="false" targetId="f80d-2250-d465-d96c" type="profile"/>
+        <infoLink id="790c-7aa2-fe74-5d42" name="The Tall Man&apos;s Gaze" hidden="false" targetId="d634-3047-ac54-e3f7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="870b-2bf2-1fe5-b3df" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="688d-41ec-92a6-1107" name="New CategoryLink" hidden="false" targetId="ad1d-cdce-31d0-c06b" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="c67d-afbb-d0f8-3f50" name="Snail Knight" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="927a-5317-312b-22f5" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cee-86b6-2192-acfa" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9a55-c516-a8cd-b2c0" name="Snail Knight" hidden="false" typeId="9de5-48af-0630-f527" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="b3d8-df85-3bf8-2af1">0&quot;</characteristic>
+            <characteristic name="A" typeId="540f-b5b1-8e73-b188">5</characteristic>
+            <characteristic name="Acc" typeId="e156-bf88-e965-3b1f">5+</characteristic>
+            <characteristic name="W" typeId="4c10-aad1-0762-0b0a">4</characteristic>
+            <characteristic name="Re" typeId="112e-baf5-3aa0-bb93">3+</characteristic>
+            <characteristic name="Models" typeId="51c9-38cb-ba9b-2fbf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c328-969c-b2cf-b7e5" name="Hardshelled" hidden="false" targetId="c715-c205-7cae-1438" type="profile"/>
+        <infoLink id="ca97-2321-26b1-7c66" name="Defensible Terrain" hidden="false" targetId="1de0-02a1-fc9e-a590" type="profile"/>
+        <infoLink id="9d14-f68c-923f-f3d6" name="Mucous Manoeuvre" hidden="false" targetId="19fc-f091-ab33-83bb" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c9c2-9e92-1cdb-a506" name="Cavalry Followers" hidden="false" targetId="49f4-7ad9-e46b-63c3" primary="false"/>
+        <categoryLink id="ab75-1b19-0228-f3d1" name="Cult Followers" hidden="false" targetId="0f19-fa6b-2ca4-c73d" primary="false"/>
+        <categoryLink id="26d9-41de-7cd7-cb6a" name="Cult" hidden="false" targetId="7d5a-686d-a761-49b5" primary="false"/>
+        <categoryLink id="337a-827c-03f9-bebe" name="New CategoryLink" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="a3ac-ebb2-b7e0-2af9" name="Cult" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a0-df47-ed02-a647" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="54ff-cf72-6788-e8b1" name="The Slug&apos;s Lament" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="bb27-62f8-3427-27bd" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb27-62f8-3427-27bd" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="a9ed-116b-607a-3f48" name="Uprising of the Louse" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="3371-1f51-7750-5eee" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3371-1f51-7750-5eee" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="0c54-c40d-41ba-a54e" name="Procession of Woe" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="2893-94c5-ebf0-7cf3" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2893-94c5-ebf0-7cf3" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="5413-fbb6-6a1e-7e6f" name="Brotherhood of Greed" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="7fce-7f5e-338e-7c4a" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fce-7f5e-338e-7c4a" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="36f8-40c9-160b-8f33" name="Lopers of the Maudlin Marsh" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="6c9e-efa3-4c99-a2b9" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c9e-efa3-4c99-a2b9" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="269c-36a0-01a4-38a1" name="Temple of Swellings" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="fb9c-e34d-7ebc-00f1" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb9c-e34d-7ebc-00f1" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="8dbc-f41d-2d2c-90be" name="Tod&apos;s Folly" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b3f9-a230-f7d7-1dea" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d315-63ef-766c-c0bf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f9-a230-f7d7-1dea" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="d315-63ef-766c-c0bf" name="Knights of the Shellwood" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="df01-7af0-698a-099f" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c54-c40d-41ba-a54e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54ff-cf72-6788-e8b1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5413-fbb6-6a1e-7e6f" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="269c-36a0-01a4-38a1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f8-40c9-160b-8f33" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbc-f41d-2d2c-90be" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9ed-116b-607a-3f48" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df01-7af0-698a-099f" type="max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8cdd-c3f9-dfec-9904" name="Stilt Spotter" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="328f-a0db-2a35-8e96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3158-0d4a-65f5-b6a5" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="4e0b-b204-159f-7966" name="Stilt Spotter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4663-f3d6-dfad-533a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8463-2d61-fa76-c63d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="7ea8-b531-41de-e25c" name="Stilt Spotter" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+              <characteristics>
+                <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Any unit of Followers in your Regiment that are not Lopers may be accompanied by a Stilt Spotter, represented by one model in their unit equipped with stilts.
+Units with Stilt Spotters increase their weapons range by 6&quot; and have the Unfortunate Wobble trait.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9de8-76a5-e4d8-7fc0" name="Unfortunate Wobble" hidden="false" targetId="271a-d4cb-8b0b-a56f" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c430-2134-8646-ef86" name="Followers" hidden="false" targetId="9641-c0c7-71e5-1ce1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="65c3-0790-7fbd-1b3a" name="Equipment" hidden="false" collective="false" import="true" defaultSelectionEntryId="d060-2631-db56-c804">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa6e-21f7-dddb-4df8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f0e-9c96-ed23-49b8" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="4034-52fa-102d-77ff" name="Missile weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360f-cf7f-88d6-699f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b261-7d0b-fa8f-0df9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="cfca-cf99-9bcb-4739" name="Missile weapons" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+              <characteristics>
+                <characteristic name="Description" typeId="7556-d5b4-92df-ce01">A unit equipped with missile weapons does not generate a powder smoke token when fired, but decreases the Resilience (Re) their target needs by 1. e.g a 5+ becomes a 4+. Remembering natural 1s always fail.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d060-2631-db56-c804" name="Black Powder Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abff-a08e-ea1b-fed1" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaf6-7f68-c922-abe3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d139-597d-647a-54ea" name="Black Powder Weapons" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+              <characteristics>
+                <characteristic name="Description" typeId="7556-d5b4-92df-ce01">A unit with black powder weapons generates a powder smoke token every time they make a shooting action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="f94e-0732-9b16-a38c" name="Close Combat weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d16-cb04-52e4-5835" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1602-ec04-db30-579e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="515e-93eb-b25b-6f3b" name="Close Combat weapons" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+              <characteristics>
+                <characteristic name="Description" typeId="7556-d5b4-92df-ce01">A unit equipped with close combat weapons cannot make shooting attacks, but increases the Resilience (Re) their target needs by 1 and decrease their own by 1 when fighting in melee.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="4bfa-f7f8-2086-ceb2" name="Uprising of the Louse Regiment" hidden="false">
+      <description>To build a Regiment belonging to the Uprising of the Louse you must take:
+	• ONE Toff
+	• As many Toadies as agreed. Taking TWO in a Three Snob game
+	• ONE Houndmaster.
+	• ONE Tall Man terrain piece.</description>
+    </rule>
+    <rule id="0d6f-8d54-9a04-5a5f" name="Snail keepers" hidden="false">
+      <description>Unit protects their hometown snail mascots with their lives. In return these smaller, slimier snails provide excellent cover for their loving guardians.
+Each unit in this Regiment counts as having a movement of 0&quot;. This does not count for Snail Knights during the Mucous Manoeuvre. They can still move about by marching and charging, just a bit slower than usual.
+If a unit from this Regiment has not moved so far this round they count as being in defensible terrain.</description>
+    </rule>
+    <rule id="53e8-0880-575e-0133" name="Slow and Steady" hidden="false">
+      <description>When playing a game against the Knights of the Shellwood the game lasts an extra round. For example when playing the Long March, the game will last 5 rounds instead of 4.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="4f2f-d341-2582-c16e" name="Command Range 6&quot;" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit has 6&quot; command range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d993-79da-0899-b6aa" name="Command Range 3&quot;" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit has 3&quot; command range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b5e4-4065-5d29-13d6" name="Weapons range 18&quot;" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit has 18&quot; weapons range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a5fe-4608-a848-dfaa" name="Weapons range 6&quot;" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit has 6&quot; weapons range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fcfa-414c-4a82-5228" name="Safety in Numbers" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">If the unit begins a round with 10 or more models they are Fearless.
+Fearless: Every time this unit is required to retreat, on a 3+ they do not retreat, and are treated as if they passed any
+panic tests.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c78e-88c7-01c2-7498" name="Sharpshooters" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit can target any enemy unit with shooting or charging not just the closest.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e3dd-5b5f-eb28-bc40" name="Vanguard" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit and their snob may deploy inside a deployment zone that is 6&quot; larger. If deploying with a Toff and another unit without Vanguard. The unit without Vanguard must use the standard deployment zone.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="05ab-1e92-17c9-9e1c" name="Skirmish" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">+2 to enemies Accuracy if this unit is the target of a shooting attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bbdf-fe2e-3425-8c5a" name="Fearless" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Every time this unit is required to retreat, on a 3+ they do not retreat, and are treated as if they passed any panic tests.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="23e7-d50d-ee7b-db9c" name="Run them Down!" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">If this unit charges or initiates a shooting engagement with an enemy unit that retreated this round (including after failing a panic test) they receive +2 to their Accuracy rolls until the melee or Engagement has resolved.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a568-ebb0-4b9e-37c1" name="Bowel-loosening Charge" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">When a unit of Bastards charges, their target counts as having twice as many panic tokens remembering a unit can never have more than 6 panic tokens. This is done before any other modifiers.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a6a1-9bcf-0e0c-5272" name="Ammunition" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">When a Stump Gun makes a shooting attack it can use one of two types of ammunition: Round shot and Grape Shot.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8576-6870-1653-bc9c" name="Round Shot" hidden="false" typeId="4790-a329-2584-ec1e" typeName="Ammunition">
+      <characteristics>
+        <characteristic name="Range" typeId="2165-0a20-f0e1-36a3">60&quot;</characteristic>
+        <characteristic name="Description" typeId="02ea-c335-3de5-254e">The player rolls three shooting attack dice instead of the usual one. Any hits cause 2 automatic wounds to the unit. These cannot be prevented by a resilience roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="71d7-585b-a969-7952" name="Grape Shot" hidden="false" typeId="4790-a329-2584-ec1e" typeName="Ammunition">
+      <characteristics>
+        <characteristic name="Range" typeId="2165-0a20-f0e1-36a3">12&quot;</characteristic>
+        <characteristic name="Description" typeId="02ea-c335-3de5-254e">Before making the shooting attack the player rolls three dice. The total rolled is the number of shooting attacks the Stump Gun makes this round. These attacks are made with an Accuracy of 6+ and the target can make its Resilience rolls as normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e0e-3097-cc02-884a" name="Unstable Icon" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">like all artillery the Regiments use Stump Guns are prone to failing catastrophically.
+• When rolling to hit as part of a shooting attack the Stump Gun receives one panic token for each natural 1 rolled. Any 1s rolled when generating Grape Shot attacks do not cause Panic tokens.
+• If the Stump Gun has 3 or more panic tokens before it makes a shooting attack it is dangerously unstable. If any further natural 1s are rolled when rolling to hit something has gone horribly wrong, immediately remove the gun from the table as it detonates obliterating the crew completely. The gun resolves its shooting attacks as normal if it explodes. Its crew, the barrel and surrounding plant matter cease to exist, but their shot still speeds towards their opponent.
+
+A Stump Gun must have at least 3 panic tokens when it rolls its shooting attacks to have any risk of exploding, and shooting attacks should be rolled all at once, not one at a time.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="05a6-c449-0ec0-f0c7" name="Stubborn fanatics" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">The crew of a Stump Gun love their grumpy child and will never abandon them. The Stump Gun cannot charge, march or move and shoot, and will never retreat in any circumstance.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aeae-5b7c-c3a2-e63a" name="Preliminary Bombardment" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">After players have deployed and before any cult abilities have been used players may choose to fire a preliminary bombardment. Starting with the player who took the initiative players take turns making a free round shot attack with their Stump Guns. Preliminary bombardments can generate panic tokens, but do not
+cause a unit to Retreat. 
+You do not need to roll for blundering for Preliminary Bombardment.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="826c-6541-7b3a-abea" name="Disgustingly Stubborn" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">When retreating Grogs only retreat ONE inch for every panic token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="19db-2d6f-b70a-ee16" name="Grenadiers" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Grogs must be equipped with black powder weapons</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="23d5-82f3-0473-35c4" name="Call the Old Guard" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Toffs belonging to The Slug&apos;s Lament are deployed in a unique fashion. Toffs are not deployed during the deployment step at start of the battle. Instead they are set  aside for later use. The Toffs Followers are deployed on the table at the start of the game as usual.
+
+At the start of the THIRD Round place your Toff along with a free extra unit of Grogs up to 6” from any table edge. The Grogs must be deployed within command
+range of the Toff. The Grogs from the Old guard are tired and weary. This unit arrives onto the battlefield with SIX panic tokens attached to them.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1733-515e-e8e6-9597" name="Warty Charisma" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units ordered by Tod can never blunder</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af35-2030-da44-7b01" name="Minders" hidden="true" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff8e-ddef-169e-204d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Toadies belonging to Tod’s Folly are considered to be his Minders. Minders often carry with them a large sack and some rope to restrain Tod if he becomes too boisterous. Minders are considered exactly the same as Toadies with this exception:
+	• When a Minder Order a unit they may choose to deactivate Misplaced Confidence for that unit until the start of the next activation. They must do this before they declare what their order will be and before rolling for any blunders.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="17b2-ffbf-790c-5172" name="Son of Tod" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">If there are two or more Tods on the field then Players should roll off to decide which player has Tod and which players have Son of Tod. Tod’s sons are unfortunately exactly like their father.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="15d0-e8ac-a407-5095" name="Bristling" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Snobs belonging to The Slug&apos;s Lament must be equipped with Moustaches and well as their chosen weapons. While fetching, Moustaches sadly confer no benefits and are for appearance only.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e63c-ef05-4a68-d5d9" name="Misplaced Confidence" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Every Follower unit in your Regiment now behaves unusually.
+• Every time your Follower units wins a shooting engagement or a Melee they are considered to have lost.
+• Every time your Follower units lose an engagement they are considered to have won.
+Note: This does not endlessly repeat on itself, and does not take effect if one unit is completely destroyed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8dc7-afa6-c134-5da3" name="Pathetic" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units of Rootlings must be equipped with close combat weapons, but do not decrease the Resilience rolls of their target by 1 in melee.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="20cc-bf9f-c835-653b" name="Marsh Born" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units of Rootlings never take dangerous terrain tests.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df5e-a93b-7bb7-ecf6" name="Tendrils" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">At the start of a Round if the Swelling is on the table it Sprouts TWO tendrils.
+Every time the Swelling sprouts you must roll to see if you blunder. If you blunder your opponent must place the tendrils instead. You only need to roll once each time the Swelling sprouts, not once for each tendril.
+A tendril must be placed with one narrow end in base to base contact with the Swelling and its other at least 2&quot; away. Once a tendril has been placed it also counts
+as the Swelling.
+A tendril must be placed so that it is at least 1&quot; away from all other units or objective markers. If its impossible to place a tendril it is not placed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ccae-5feb-beb7-4ac3" name="Flesh hunger" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">The Swelling constantly hungers for flesh.
+	• If a unit ends its move within 2&quot; of the Swelling it must immediately take a dangerous terrain test. This includes retreating.
+	• If a tendril is placed within 2&quot; of a unit, that unit must immediately take a dangerous terrain test.
+	• At the start of a round, after the Swelling sprouts any units within 2&quot; of the Swelling must immediately take a dangerous terrain test.
+The Swelling can only ever force a unit to take one dangerous terrain test a round</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6bf1-3797-761a-c3d2" name="Root Priest" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Your Toff has been elected Root Priest and given a horrific projectile called the Swelling.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5be-f741-e711-683e" name="Toss" hidden="true" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8442-c621-199f-3dfc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">Once per game your Root Priest can make a special shooting attack with a range of 12&quot;.
+The Toss can be preformed any time you would make a normal shooting attack. The Toss is made as if the Root Priest had an accuracy of 1+.
+If the Toss hits you may pick one model in the target unit. This model is removed and replaced with The Swelling. If there are any models in the way of the
+Swelling they are moved 1&quot; directly away keeping in coherency.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1992-e721-cca4-dcaf" name="Call of the Swollen One" hidden="true" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8442-c621-199f-3dfc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">Your Root Priest may forgo their Activation to call on the Swelling. When chosen to Activate the Snob may instead sprout a single tendril, rolling to blunder like normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd0b-3f9b-b68e-1480" name="Stilts" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Lopers are armed only with their hardened stilts and must be armed with close combat weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="271a-d4cb-8b0b-a56f" name="Unfortunate Wobble" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">This unit may never volley. Every time this unit makes a move as part of a move and shoot or march order they must move the full distance possible and no less. They must move in a straight line.
+If this unit retreats they must take a dangerous terrain test in addition to any caused by other units or terrain.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70ed-9180-160f-7f29" name="Stride" hidden="true" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="328f-a0db-2a35-8e96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units with this trait can move through enemy and friendly units with no penalties. Units with this trait also do not take dangerous terrain test from dangerous terrain</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9549-2a93-aee6-2cb3" name="Exposed" hidden="true" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="328f-a0db-2a35-8e96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units with this trait can never benefit from any type of cover.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5dd-f067-7cf2-be8d" name="Stilt Spotter" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Any unit of Followers in your Regiment that are not Lopers may be accompanied by a Stilt Spotter, represented by one model in their unit equipped with stilts.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba2e-7b46-137e-5734" name="Snobs&apos; Stilts" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Snobs in this Regiment are all equipped with stilts. The Toff mounted on a pair much taller than the rest. This increase their weapon range and their command range by 6&quot; and have the Stride and Exposed trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e8ac-97b4-f46e-04d2" name="Gluttony" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">Every unit of Followers in your Regiment has the Gluttony trait.
+Gluttony: Every time a unit makes a shooting attack, before any dice have been rolled, they may remove one model from their unit to add 4 dice to their shooting attacks.
+	• They may do this any number of times during this shooting attack.
+	• The models removed do not count as wounds for the sake of winning and losing a shooting engagement
+	•You may never remove your last model this way. While possible to eat yourself, it&apos;s hard to shoot someone after</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3f97-a628-7e88-4cf9" name="Grub&apos;s Offering" hidden="true" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="596c-bbea-b81e-7cb0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">When a Grub orders a friendly unit of Followers as part of their Activation they may immediately take a dangerous terrain test. If they take this test they have severed a part of their body and served it to that unit.
+If a Grub serves a body part to a unit that unit will immediately gain any mutations that Grub has until the start of the
+next round. If the test is failed the donation has been too much for the Grub and they are removed as a casualty. The served unit
+will still gain the mutation for the rest of the round. Each Grub may take one free mutation. 
+If playing a standalone game each Grub must take a different mutation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="314d-e8a9-71ba-6470" name="Grub" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Your Regiment collects only the tastiest of mutated Snobs. These Grubs struggle to command their followers without offering them the occasional treat. To motivate their shambling horde they often have to cut off a few fingers or possibly donate a limb or two.
+Both your Toff and your Toadies are considered Grub for their ravenous followers.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="89aa-05f2-8e67-ea6e" name="Ululating Shrine" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">The Rootshrine carries with it an ancient and gigantic root relic as well as a plethora of smaller travel-stained icons.
+The Shrine is lovingly maintained by a Confessor. The Confessor hears the all the worries of his followers and either soothes them or whips their concerns into a bloody frenzy.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="362d-6750-dcc9-063e" name="Confession" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Every tine the Rootshrine is activated it may take up to 2 panic token from any friendly unit on the table and give it to another unit within 12&quot;. The screams of anguish will always reach the Confessor. These units do not need to be within line of sight. The Shrine must take panic tokens from friendly units, but can give them to enemy
+units.
+The Rootshine must be on a base no larger than 80x120mm and no smaller than 75x105mm. If there are two shrines with different sized bases, measure its Confession range from the centre of its base</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9edf-0fb9-75ba-db06" name="Zealot" hidden="true" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">When fighting in melee a unit of Zealots receives two extra attack dice for every panic token it has. Zealots can still only have a maximum of 6 Panic tokens at any time.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="92a7-1bdf-6b10-98c7" name="Clergy" hidden="true" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc55-002a-1af9-f434" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">When a member of the Clergy orders a unit they may give that unit Fearless until the end of the round. If a member of the Clergy does this, the target unit receives a Panic Token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fb90-42a6-982d-f6c4" name="Uprising of the Louse" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">By Choosing to dedicate your Regiment to this cult you have chosen to throw off the shackles of your hated betters.
+The Uprising of the Louse may never take any Follower units and its Snobs may capture and contest objectives.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3548-68ee-fcad-cedb" name="Rebellion" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">The seeds of rebellion have been sown.
+When an enemy unit Blunders you may instead make a free shooting attack against any target of your choice, so long as it is in range and line of sight of the blundering
+unit.
+The unit may still make perform its order normally after this special shooting attack has been resolved.
+If the unit has no ranged weapons it instead makes a shooting attack hurling: rocks, boots and rotten veg with a range of 6&quot; and an accuracy of 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bead-3ce0-5ca9-a362" name="The Houndmaster" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Trained to hunt Snobs the Houndmaster is on the hunt. You may take 1 free Houndmaster. The Houndmaster is considered a Snob.
+The Houndmaster is accompanied by their trusty Root hound. The Root hound and the Houndmaster are considered one unit with a shared profile. If they take one wound they are both removed. They are based like Snobs.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7849-a900-69d2-d64e" name="Sniff them Out" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">The Houndmaster may declare a Toff Off! with any enemy Snob. The enemy Snob must always choose Sabres.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c1aa-7fcc-739d-e971" name="The Tall Man" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">A towering sacrificial site the staring eyes of the tall man watches all.
+The Tall man is a piece of terrain with about a 4&quot; diameter base. The site can be represented by a guillotine, a wicker man, a pit, a cauldron of soup or
+any other suitable place of execution. The Tall man must have an obvious central point from which to measure from and players should leave enough room for models
+to be placed on or around the Tall Man.
+The Tall man is placed on the table after terrain and objectives, but before any units have been deployed. It must be placed anywhere within 24&quot; of your table edge.
+If there are multiple Tall Men, they are deployed one at a time, starting with the player who took the initiative.
+The Tall man cannot be placed within 1&quot; of any objective marker of piece of terrain. The tall man can be moved across with no penalty.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f80d-2250-d465-d96c" name="The Tall Man Stands" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">The Tall Man is a piece of terrain and cannot be destroyed in the normal way.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d634-3047-ac54-e3f7" name="The Tall Man&apos;s Gaze" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">The Tall Man&apos;s Gaze Stretches out 6&quot; from its centre of its base. Any unit even partially within this area is considered in The Tall Man&apos;s Gaze.
+	• At the Start of the second round increase the range of the Tall Man&apos;s Gaze by 6&quot;.
+	• If an enemy Snob is removed for any reason increase the range of the Tall Man&apos;s Gaze by 6&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b0ce-95b8-b93e-fc17" name="The Tall Man Reveals" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">If an enemy Follower unit is within the Tall Man&apos;s Gaze that unit blunders not on a 1, but instead on the Round Number.
+For example on round 3, a enemy unit within the Tall Man&apos;s Gaze will blunder on a 1,2 or 3.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac76-15ea-b781-7aed" name="The Tall Man Protects" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">Any friendly unit within the Tall Man&apos;s Gaze may ignore wounds on a 2+. This is done after Resilience rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c715-c205-7cae-1438" name="Hardshelled" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Snail Knights are always considered to be wholly within defensible terrain.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1de0-02a1-fc9e-a590" name="Defensible Terrain" hidden="false" typeId="0349-3913-10aa-54e7" typeName="Rules">
+      <characteristics>
+        <characteristic name="Description" typeId="7556-d5b4-92df-ce01">Units shooting at targets wholly within defensible terrain receive a -1 penalty to their rolls to hit.
+Units that are the target of shooting attacks while in defensible terrain are considered to have Fearless.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="19fc-f091-ab33-83bb" name="Mucous Manoeuvre" hidden="false" typeId="e6d9-4d3c-02c4-5986" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="ddba-d8af-6711-7d6d">Once per game, at the start of a round the Player can announce they are performing their Mucous Manoeuvre. All Snail Knights count as having a movement of 6&quot; for that round only.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="1b0f-62a9-8e43-127a" name="Mutations" hidden="false">
+      <profiles>
+        <profile id="cb85-3ed4-4ebd-8f39" name="Appalling Stagnation" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">The Snob reeks. It is impossibly difficult to concentrate through the vomiting. Enemy units attacking units with this mutation in melee increase their Acc by 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ff38-e7d4-db5d-3d75" name="Bulbous" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">The Snob&apos;s stomach and limbs swell, bursting plate and splitting mail. This new body becomes supernaturally resilient to blows which find it hard to penetrate the thick sinewy flesh. Units with this mutation reduce Resilience needed by 1. Eg. A Re of 5+ becomes 4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0336-4240-b5ea-61c7" name="Crown of Toes" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">Wiggling toes sprout out in number all over the Snob&apos;s body proving a somewhat unnerving sight. Enemy units charged by units with this mutation count as having +1 panic  tokens.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4b23-abe9-f77e-70d2" name="Instability" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">The body of this Snob quivers and pulses with barely contained energy. When a model with this mutation removed as a causality it explodes! All other units within 2&quot; suffer 1 wound. This wound can be prevented with a resilience roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e3d-acdf-cc30-2991" name="Shrivelled" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">The Snobs limbs shrivel and dry out as if they were a root left out in the sun. A unit with this mutation has -1 movement.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d78e-3f89-46c7-cb11" name="Toothlessness" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">Difficulty eating hard foods.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7eb4-fa1e-af9a-e4ce" name="Tuberous Tendrils" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">Prehensile roots fold out distended pores of the Snob. Units with this mutation generate +2 attack dice in melee.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54c3-8743-5bf3-6533" name="Wings" hidden="false" typeId="ae83-b8ef-543b-2f5a" typeName="Mutation Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="938f-641e-c638-3b21">Pathetic crusted flaps fold out of the Snob&apos;s back. As the Snobs bones decay internally they are able to take off from the ground and soar over the battlefield. Units with this mutation may move across dangerous terrain, units and objectives as if they weren&apos;t there. They must still obey all other normal movement rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
+</catalogue>
